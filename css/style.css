@@ -1,0 +1,121 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
+	
+
+}
+
+.marquee {
+	overflow: hidden;
+	white-space: nowrap;
+	
+  }
+  
+.marquee p {
+	display: inline-block;
+	animation: marquee 10s linear infinite;
+	font-weight: bolder;
+	padding-top: 8px;
+	
+
+}
+  
+@keyframes marquee {
+	0%   { transform: translateX(100%); }
+	100% { transform: translateX(-100%); }
+  }
+
+
+
+
+.horizontal-card-img img{
+	width: 100%;
+	height: 35vh;
+
+
+
+}
+
+
+
+.about_img{
+	min-width: 100%;
+	max-height: 280px;
+
+}
+
+.headcolor{
+	color: #c5dbe2;
+	font-weight: 300;
+	
+}
+.my-service img{
+	width: 100%;
+	height: 100%;
+}
+
+.chekcout-my-profile{
+	background: #a6dcef;
+}
+
+footer p{
+	margin-bottom: 0;
+}
+
+.proimg {
+    height: 320px;
+    width: 100%;
+}
+.video-wrapper {
+    position: relative;
+    /* padding-bottom: 56.25%; 16:9 aspect ratio (height: 9/16 * width) */
+    overflow: hidden;
+    max-width: 100%; /* Ensures the video container doesn't exceed the viewport width */
+}
+
+.video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.whatsapp-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.whatsapp {
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-color: green; /* Adjust color as needed */
+    border-radius: 50%;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Add shadow for better visibility */
+}
+
+.whatsapp i {
+    line-height: 60px; /* Center the icon vertically */
+    font-size: 30px;
+    color: white; /* Adjust icon color as needed */
+}
+
+/* Add animation */
+@keyframes jump {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+
+.whatsapp:hover {
+    animation: jump 0.5s infinite; /* Adjust animation duration and behavior as needed */
+}
